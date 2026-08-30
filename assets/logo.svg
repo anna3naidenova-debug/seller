@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" fill="none">
+  <!-- ПЛЕЙСХОЛДЕР ЛОГОТИПА: заменить на оригинальный логотип заказчика -->
+  <polygon points="30,4 52,17 52,43 30,56 8,43 8,17" fill="#1F6B3B"/>
+  <polygon points="30,4 52,17 30,30 8,17" fill="#7CC242"/>
+  <polygon points="30,30 52,17 52,43 30,56" fill="#4CAF50"/>
+  <text x="66" y="27" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="20" fill="#1A2E22">Cargo</text>
+  <text x="66" y="48" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="20" fill="#1F6B3B">Siberia</text>
+</svg>

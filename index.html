@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cargo Siberia — доставка грузов из Китая под ключ от 1 кг</title>
+<meta name="description" content="Cargo Siberia — доставка и логистика грузов из Китая под ключ: поиск поставщиков, склад в Китае, упаковка, отправка от 1 кг. Оставьте заявку — рассчитаем стоимость за 15 минут.">
+<meta name="keywords" content="доставка из Китая, карго из Китая, логистика Китай, поиск поставщиков Китай, груз от 1 кг">
+<meta property="og:title" content="Cargo Siberia — доставка грузов из Китая под ключ">
+<meta property="og:description" content="От поиска поставщика до груза у вас на складе. Отправка от 1 кг.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://example.com/">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+
+<!-- Tailwind CSS через CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#1F6B3B',
+          accent: '#4CAF50',
+          accent2: '#7CC242',
+          bgsoft: '#F5F7F5',
+          dark: '#1A2E22',
+          ink: '#333333'
+        },
+        fontFamily: {
+          sans: ['Manrope', 'Inter', 'Arial', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans bg-bgsoft text-ink antialiased">
+
+<!-- ============ 1. ШАПКА (HEADER) ============ -->
+<header id="site-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-black/5 transition-shadow">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 sm:h-20">
+
+      <a href="#top" class="flex items-center shrink-0">
+        <img src="assets/logo.svg" alt="Cargo Siberia" class="h-9 sm:h-10 w-auto">
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-dark">
+        <a href="#services" class="hover:text-primary transition-colors">Услуги</a>
+        <a href="#advantages" class="hover:text-primary transition-colors">Преимущества</a>
+        <a href="#process" class="hover:text-primary transition-colors">Как работаем</a>
+        <a href="#reviews" class="hover:text-primary transition-colors">Отзывы</a>
+        <a href="#contacts" class="hover:text-primary transition-colors">Контакты</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="tel:+79990000000" class="flex items-center gap-2 text-sm font-semibold text-dark hover:text-primary transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 0 1 2-2h2.28a1 1 0 0 1 .97.76l1.06 4.24a1 1 0 0 1-.5 1.12l-1.7.85a12.04 12.04 0 0 0 5.92 5.92l.85-1.7a1 1 0 0 1 1.12-.5l4.24 1.06a1 1 0 0 1 .76.97V19a2 2 0 0 1-2 2h-1C9.72 21 3 14.28 3 6V5Z"/></svg>
+          +7 (999) 000-00-00
+        </a>
+        <div class="flex items-center gap-2">
+          <a href="https://wa.me/79990000000" target="_blank" rel="noopener" aria-label="WhatsApp" class="h-9 w-9 rounded-full bg-accent/10 flex items-center justify-center text-primary hover:bg-accent/20 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.02h-.01a8.1 8.1 0 0 1-4.14-1.14l-.3-.18-3.14.82.84-3.06-.19-.32a8.07 8.07 0 0 1-1.24-4.28c0-4.46 3.63-8.09 8.1-8.09 4.46 0 8.09 3.63 8.09 8.1 0 4.46-3.63 8.15-8.01 8.15Zm4.44-6.07c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42-.14-.01-.3-.01-.46-.01-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.44-.59 1.64-1.15.2-.56.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"/></svg>
+          </a>
+          <a href="https://t.me/cargosiberia" target="_blank" rel="noopener" aria-label="Telegram" class="h-9 w-9 rounded-full bg-accent/10 flex items-center justify-center text-primary hover:bg-accent/20 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6 3.6 11.9c-1.2.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.5c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.1-2 4.4 3.2c.8.5 1.4.2 1.6-.7l2.9-13.7c.3-1.2-.4-1.7-1.8-1.9Zm-3.6 3.3-7.6 6.9-.3 3.3-1.5-4.7 9.4-5.5c.5-.3.9.1.5.5Z"/></svg>
+          </a>
+          <a href="weixin://" aria-label="WeChat" class="h-9 w-9 rounded-full bg-accent/10 flex items-center justify-center text-primary hover:bg-accent/20 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="currentColor"><path d="M8.7 3.5C4.4 3.5 1 6.3 1 9.8c0 2 1.1 3.7 2.9 4.9l-.7 2.2 2.5-1.3c.7.2 1.4.3 2 .3h.5a5.9 5.9 0 0 1-.2-1.6c0-3.5 3.4-6.4 7.6-6.4h.4C15.4 5 12.3 3.5 8.7 3.5Zm-2.6 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm5.2 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM16 9.2c-3.7 0-6.6 2.5-6.6 5.6 0 3.1 3 5.6 6.6 5.6.6 0 1.2-.1 1.8-.2l2.1 1.1-.6-1.9c1.5-1 2.5-2.5 2.5-4.2 0-3.1-2.9-5.6-6.6-5.6Zm-2.2 3.4a.85.85 0 1 1 0 1.7.85.85 0 0 1 0-1.7Zm4.4 0a.85.85 0 1 1 0 1.7.85.85 0 0 1 0-1.7Z"/></svg>
+          </a>
+        </div>
+        <a href="#request-form" data-cta="request" data-mode="modal" class="bg-primary hover:bg-dark text-white text-sm font-bold px-5 py-2.5 rounded-full transition-colors">Оставить заявку</a>
+      </div>
+
+      <button id="burger-btn" aria-label="Открыть меню" aria-expanded="false" class="lg:hidden h-10 w-10 flex items-center justify-center text-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden pb-5 border-t border-black/5">
+      <nav class="flex flex-col gap-1 pt-3 text-base font-semibold text-dark">
+        <a href="#services" class="py-2.5">Услуги</a>
+        <a href="#advantages" class="py-2.5">Преимущества</a>
+        <a href="#process" class="py-2.5">Как работаем</a>
+        <a href="#reviews" class="py-2.5">Отзывы</a>
+        <a href="#contacts" class="py-2.5">Контакты</a>
+      </nav>
+      <div class="flex items-center gap-3 pt-4">
+        <a href="tel:+79990000000" class="text-sm font-semibold text-primary">+7 (999) 000-00-00</a>
+      </div>
+      <div class="flex items-center gap-3 pt-3">
+        <a href="https://wa.me/79990000000" class="h-9 w-9 rounded-full bg-accent/10 flex items-center justify-center text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
+        </a>
+        <a href="https://t.me/cargosiberia" class="h-9 w-9 rounded-full bg-accent/10 flex items-center justify-center text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6 3.6 11.9c-1.2.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.5c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.1-2 4.4 3.2c.8.5 1.4.2 1.6-.7l2.9-13.7c.3-1.2-.4-1.7-1.8-1.9Z"/></svg>
+        </a>
+      </div>
+      <a href="#request-form" data-cta="request" class="mt-4 block text-center bg-primary text-white font-bold px-5 py-3 rounded-full">Оставить заявку</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ 2. ПЕРВЫЙ ЭКРАН (HERO) ============ -->
+<section class="relative hero-gradient text-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+    <div>
+      <span class="inline-block bg-white/10 border border-white/20 text-accent2 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full mb-6">Доставка из Китая под ключ</span>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-5">
+        Доставим ваш товар из Китая под ключ — от поиска поставщика до груза у вас на складе
+      </h1>
+      <p class="text-base sm:text-lg text-white/85 mb-8 max-w-xl">
+        Поиск и проверка поставщиков, склад и упаковка в Китае, оплата счетов, сопровождение и доставка груза любого объёма. <span class="font-bold text-white">Отправка от 1 кг.</span>
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#request-form" data-cta="request" class="pulse-cta text-center bg-accent hover:bg-primary text-white font-bold px-7 py-4 rounded-full text-base transition-colors">Оставить заявку</a>
+        <a href="#services" class="text-center bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-7 py-4 rounded-full text-base transition-colors">Наши услуги</a>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 pt-8 border-t border-white/15">
+        <div>
+          <p class="text-2xl sm:text-3xl font-extrabold text-accent2">15+ лет</p>
+          <p class="text-xs sm:text-sm text-white/85 mt-1">на рынке*</p>
+        </div>
+        <div>
+          <p class="text-2xl sm:text-3xl font-extrabold text-accent2">10 000+</p>
+          <p class="text-xs sm:text-sm text-white/85 mt-1">доставленных грузов*</p>
+        </div>
+        <div>
+          <p class="text-2xl sm:text-3xl font-extrabold text-accent2">Свой склад</p>
+          <p class="text-xs sm:text-sm text-white/85 mt-1">в Китае</p>
+        </div>
+        <div>
+          <p class="text-2xl sm:text-3xl font-extrabold text-accent2">От 1 кг</p>
+          <p class="text-xs sm:text-sm text-white/85 mt-1">любой объём груза</p>
+        </div>
+      </div>
+      <p class="text-[11px] text-white/50 mt-3">*Плейсхолдер — точные цифры уточняются у заказчика</p>
+    </div>
+
+    <!-- Карта маршрутов доставки: Гуанчжоу → Дубай, Россия, Казахстан, Беларусь (условная схема, не географически точная карта) -->
+    <div class="hidden lg:flex justify-center">
+      <div class="relative w-full max-w-md aspect-square rounded-[2.5rem] bg-white/5 border border-white/15 backdrop-blur-sm p-6">
+        <svg viewBox="0 0 400 400" class="w-full h-full" role="img" aria-label="Схема маршрутов доставки из Гуанчжоу в Дубай, Россию, Казахстан и Беларусь">
+          <defs>
+            <radialGradient id="globeGlow" cx="50%" cy="50%" r="65%">
+              <stop offset="0%" stop-color="#7CC242" stop-opacity="0.28"/>
+              <stop offset="100%" stop-color="#7CC242" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <circle cx="200" cy="200" r="180" fill="url(#globeGlow)"/>
+
+          <!-- Условная сетка "глобуса" -->
+          <g stroke="rgba(255,255,255,.18)" fill="none" stroke-width="1">
+            <circle cx="200" cy="200" r="180"/>
+            <ellipse cx="200" cy="200" rx="180" ry="70"/>
+            <ellipse cx="200" cy="200" rx="180" ry="130"/>
+            <ellipse cx="200" cy="200" rx="70" ry="180"/>
+            <ellipse cx="200" cy="200" rx="130" ry="180"/>
+          </g>
+
+          <!-- Маршруты доставки -->
+          <g fill="none" stroke="#7CC242" stroke-width="2" stroke-dasharray="6 6" opacity="0.85">
+            <path d="M300,300 Q197,241 80,230"/>
+            <path d="M300,300 Q261,218 190,160"/>
+            <path d="M300,300 Q243,182 150,90"/>
+            <path d="M300,300 Q198,168 70,60"/>
+          </g>
+
+          <!-- Самолётики на маршрутах -->
+          <g fill="#ffffff">
+            <path transform="translate(190,265) rotate(-162)" d="M-7,-3.2 L9,0 L-7,3.2 L-2.5,0 Z"/>
+            <path transform="translate(245,230) rotate(-128)" d="M-7,-3.2 L9,0 L-7,3.2 L-2.5,0 Z"/>
+            <path transform="translate(225,195) rotate(-126)" d="M-7,-3.2 L9,0 L-7,3.2 L-2.5,0 Z"/>
+            <path transform="translate(185,180) rotate(-134)" d="M-7,-3.2 L9,0 L-7,3.2 L-2.5,0 Z"/>
+          </g>
+
+          <!-- Города назначения -->
+          <g font-family="Manrope, Arial, sans-serif">
+            <circle cx="80" cy="230" r="5" fill="#ffffff"/>
+            <text x="88" y="227" fill="#ffffff" font-size="13" font-weight="700">Дубай</text>
+
+            <circle cx="190" cy="160" r="5" fill="#ffffff"/>
+            <text x="198" y="157" fill="#ffffff" font-size="13" font-weight="700">Казахстан</text>
+
+            <circle cx="150" cy="90" r="5" fill="#ffffff"/>
+            <text x="158" y="87" fill="#ffffff" font-size="13" font-weight="700">Россия</text>
+
+            <circle cx="70" cy="60" r="5" fill="#ffffff"/>
+            <text x="78" y="57" fill="#ffffff" font-size="13" font-weight="700">Беларусь</text>
+
+            <!-- Хаб: склад в Гуанчжоу -->
+            <circle cx="300" cy="300" r="8" fill="#7CC242"/>
+            <circle cx="300" cy="300" r="8" fill="none" stroke="#7CC242" stroke-width="2" opacity="0.6">
+              <animate attributeName="r" values="8;20;8" dur="2.4s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.6;0;0.6" dur="2.4s" repeatCount="indefinite"/>
+            </circle>
+            <text x="308" y="322" fill="#ffffff" font-size="14" font-weight="800">Гуанчжоу</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. УСЛУГИ КОМПАНИИ ============ -->
+<section id="services" class="py-16 sm:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-dark mb-4">Услуги компании</h2>
+      <p class="text-black/60 text-base sm:text-lg">Полный цикл работы с поставками из Китая — от поиска товара до доставки на ваш склад</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Карточка 1 -->
+      <div class="reveal hover-lift bg-bgsoft rounded-2xl p-7 border border-black/5">
+        <div class="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9-4 9 4-9 4-9-4Zm0 0v10l9 4m0-10v10m9-14v10l-9 4"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-dark mb-2">Хранение и упаковка товара</h3>
+        <p class="text-sm text-black/60 leading-relaxed">Приём товара на собственном складе в Китае, надёжная упаковка для транспортировки.</p>
+      </div>
+      <!-- Карточка 2 -->
+      <div class="reveal hover-lift bg-bgsoft rounded-2xl p-7 border border-black/5">
+        <div class="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path stroke-linecap="round" d="m21 21-4.3-4.3"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-dark mb-2">Поиск и проверка поставщиков</h3>
+        <p class="text-sm text-black/60 leading-relaxed">Подбор надёжных поставщиков, проверка их благонадёжности и качества товара.</p>
+      </div>
+      <!-- Карточка 3 -->
+      <div class="reveal hover-lift bg-bgsoft rounded-2xl p-7 border border-black/5">
+        <div class="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-dark mb-2">Сопровождение по Китаю</h3>
+        <p class="text-sm text-black/60 leading-relaxed">Помощь на месте: посещение фабрик, рынков, решение вопросов на территории Китая.</p>
+      </div>
+      <!-- Карточка 4 -->
+      <div class="reveal hover-lift bg-bgsoft rounded-2xl p-7 border border-black/5">
+        <div class="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.4-4 8-9 8-1.2 0-2.4-.2-3.4-.6L3 21l1.7-4.1A7.9 7.9 0 0 1 3 12c0-4.4 4-8 9-8s9 3.6 9 8Z"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-dark mb-2">Услуги переводчика</h3>
+        <p class="text-sm text-black/60 leading-relaxed">Переводчик с китайского для переговоров и общения с поставщиками.</p>
+      </div>
+      <!-- Карточка 5 -->
+      <div class="reveal hover-lift bg-bgsoft rounded-2xl p-7 border border-black/5">
+        <div class="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="12" rx="2"/><path stroke-linecap="round" d="M3 10h18M7 15h4"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-dark mb-2">Оплата счетов</h3>
+        <p class="text-sm text-black/60 leading-relaxed">Оплата товара и услуг поставщикам в Китае от лица клиента.</p>
+      </div>
+      <!-- Карточка 6 -->
+      <div class="reveal hover-lift bg-bgsoft rounded-2xl p-7 border border-black/5">
+        <div class="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9-4 9 4v6c0 5-3.8 8.5-9 10-5.2-1.5-9-5-9-10V7Z"/><path stroke-linecap="round" d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-dark mb-2">Отправка груза от 1 кг</h3>
+        <p class="text-sm text-black/60 leading-relaxed">Доставка грузов любого объёма — минимальный вес отправления от 1 кг.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. ПРЕИМУЩЕСТВА КОМПАНИИ ============ -->
+<section id="advantages" class="py-16 sm:py-24 bg-bgsoft">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-dark mb-4">Почему выбирают нас</h2>
+      <p class="text-black/60 text-base sm:text-lg">Работаем так, чтобы закупка в Китае была простой и предсказуемой даже для новичков</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal flex gap-4 bg-white rounded-2xl p-6 border border-black/5">
+        <div class="h-10 w-10 shrink-0 rounded-full bg-accent/15 flex items-center justify-center text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-dark mb-1">Полный цикл «под ключ»</h3>
+          <p class="text-sm text-black/60">От поиска товара до доставки на склад клиента.</p>
+        </div>
+      </div>
+      <div class="reveal flex gap-4 bg-white rounded-2xl p-6 border border-black/5">
+        <div class="h-10 w-10 shrink-0 rounded-full bg-accent/15 flex items-center justify-center text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21V9l9-6 9 6v12M9 21v-6h6v6"/></svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-dark mb-1">Свой склад в Китае</h3>
+          <p class="text-sm text-black/60">Собственный склад и представители на месте.</p>
+        </div>
+      </div>
+      <div class="reveal flex gap-4 bg-white rounded-2xl p-6 border border-black/5">
+        <div class="h-10 w-10 shrink-0 rounded-full bg-accent/15 flex items-center justify-center text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7 12 3 4 7m16 0-8 4m8-4v10l-8 4M4 7l8 4m-8-4v10l8 4m0-10v10"/></svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-dark mb-1">Отправка от 1 кг</h3>
+          <p class="text-sm text-black/60">Работаем и с малыми, и с крупными партиями.</p>
+        </div>
+      </div>
+      <div class="reveal flex gap-4 bg-white rounded-2xl p-6 border border-black/5">
+        <div class="h-10 w-10 shrink-0 rounded-full bg-accent/15 flex items-center justify-center text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="12" rx="2"/><path stroke-linecap="round" d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-dark mb-1">Прозрачные цены</h3>
+          <p class="text-sm text-black/60">Без скрытых комиссий на любом этапе.</p>
+        </div>
+      </div>
+      <div class="reveal flex gap-4 bg-white rounded-2xl p-6 border border-black/5">
+        <div class="h-10 w-10 shrink-0 rounded-full bg-accent/15 flex items-center justify-center text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path stroke-linecap="round" d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-dark mb-1">Личный менеджер</h3>
+          <p class="text-sm text-black/60">Сопровождение на каждом этапе сделки.</p>
+        </div>
+      </div>
+      <div class="reveal flex gap-4 bg-white rounded-2xl p-6 border border-black/5">
+        <div class="h-10 w-10 shrink-0 rounded-full bg-accent/15 flex items-center justify-center text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2 3 6v6c0 5 3.8 9 9 10 5.2-1 9-5 9-10V6l-9-4Z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-dark mb-1">Проверка поставщиков</h3>
+          <p class="text-sm text-black/60">Защита от мошенников и бракованного товара.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. КАК МЫ РАБОТАЕМ (ЭТАПЫ) ============ -->
+<section id="process" class="py-16 sm:py-24 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-dark mb-4">Как мы работаем</h2>
+      <p class="text-black/60 text-base sm:text-lg">Прозрачный процесс из шести шагов — от заявки до товара на вашем складе</p>
+    </div>
+
+    <!-- Десктоп: горизонтальная шкала -->
+    <div class="hidden md:block relative reveal">
+      <div class="absolute top-6 left-0 right-0 h-0.5 timeline-line"></div>
+      <div class="grid grid-cols-6 gap-4">
+        <div class="flex flex-col items-center text-center">
+          <div class="h-12 w-12 rounded-full bg-primary text-white font-bold flex items-center justify-center relative z-10">1</div>
+          <p class="mt-4 text-sm font-semibold text-dark">Оставляете заявку</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="h-12 w-12 rounded-full bg-primary text-white font-bold flex items-center justify-center relative z-10">2</div>
+          <p class="mt-4 text-sm font-semibold text-dark">Подбираем поставщика и товар</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="h-12 w-12 rounded-full bg-primary text-white font-bold flex items-center justify-center relative z-10">3</div>
+          <p class="mt-4 text-sm font-semibold text-dark">Проверяем и оплачиваем</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="h-12 w-12 rounded-full bg-primary text-white font-bold flex items-center justify-center relative z-10">4</div>
+          <p class="mt-4 text-sm font-semibold text-dark">Принимаем и упаковываем на складе</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="h-12 w-12 rounded-full bg-primary text-white font-bold flex items-center justify-center relative z-10">5</div>
+          <p class="mt-4 text-sm font-semibold text-dark">Отправляем груз</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="h-12 w-12 rounded-full bg-accent text-white font-bold flex items-center justify-center relative z-10">6</div>
+          <p class="mt-4 text-sm font-semibold text-dark">Получаете товар</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Мобайл: вертикальная шкала -->
+    <div class="md:hidden relative reveal pl-14">
+      <div class="absolute top-1 bottom-1 left-6 w-0.5 timeline-line-v"></div>
+      <div class="space-y-8">
+        <div class="relative">
+          <div class="absolute -left-14 h-12 w-12 rounded-full bg-primary text-white font-bold flex items-center justify-center">1</div>
+          <p class="pt-3 text-sm font-semibold text-dark">Оставляете заявку</p>
+        </div>
+        <div class="relative">
+          <div class="absolute -left-14 h-12 w-12 rounded-full bg-primary text-white font-bold flex items-center justify-center">2</div>
+          <p class="pt-3 text-sm font-semibold text-dark">Подбираем поставщика и товар</p>
+        </div>
+        <div class="relative">
+          <div class="absolute -left-14 h-12 w-12 rounded-full bg-primary text-white font-bold flex items-center justify-center">3</div>
+          <p class="pt-3 text-sm font-semibold text-dark">Проверяем и оплачиваем</p>
+        </div>
+        <div class="relative">
+          <div class="absolute -left-14 h-12 w-12 rounded-full bg-primary text-white font-bold flex items-center justify-center">4</div>
+          <p class="pt-3 text-sm font-semibold text-dark">Принимаем и упаковываем на складе</p>
+        </div>
+        <div class="relative">
+          <div class="absolute -left-14 h-12 w-12 rounded-full bg-primary text-white font-bold flex items-center justify-center">5</div>
+          <p class="pt-3 text-sm font-semibold text-dark">Отправляем груз</p>
+        </div>
+        <div class="relative">
+          <div class="absolute -left-14 h-12 w-12 rounded-full bg-accent text-white font-bold flex items-center justify-center">6</div>
+          <p class="pt-3 text-sm font-semibold text-dark">Получаете товар</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. ЦЕННОСТИ КОМПАНИИ ============ -->
+<section class="py-16 sm:py-24 bg-primary text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4">Наши ценности</h2>
+      <p class="text-white/75 text-base sm:text-lg">То, на чём строится доверие наших клиентов</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="reveal text-center">
+        <p class="text-4xl font-extrabold text-accent2 mb-3">01</p>
+        <h3 class="font-bold text-lg mb-2">Надёжность</h3>
+        <p class="text-sm text-white/85">Отвечаем за груз на каждом этапе пути.</p>
+      </div>
+      <div class="reveal text-center">
+        <p class="text-4xl font-extrabold text-accent2 mb-3">02</p>
+        <h3 class="font-bold text-lg mb-2">Честность</h3>
+        <p class="text-sm text-white/85">Прозрачные условия и цены без сюрпризов.</p>
+      </div>
+      <div class="reveal text-center">
+        <p class="text-4xl font-extrabold text-accent2 mb-3">03</p>
+        <h3 class="font-bold text-lg mb-2">Забота о клиенте</h3>
+        <p class="text-sm text-white/85">Сопровождаем и подсказываем, даже если вы впервые работаете с Китаем.</p>
+      </div>
+      <div class="reveal text-center">
+        <p class="text-4xl font-extrabold text-accent2 mb-3">04</p>
+        <h3 class="font-bold text-lg mb-2">Профессионализм</h3>
+        <p class="text-sm text-white/85">Знаем внутреннюю кухню закупок в Китае.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. АКЦИИ / СПЕЦПРЕДЛОЖЕНИЯ ============ -->
+<section class="py-16 sm:py-24 bg-bgsoft">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-dark mb-4">Акции и спецпредложения</h2>
+      <p class="text-black/60 text-base sm:text-lg">Ограниченные предложения для новых клиентов*</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+      <div class="reveal flex flex-col relative overflow-hidden rounded-2xl p-7 text-white bg-gradient-to-br from-primary to-dark">
+        <span class="badge-limited self-start inline-block text-[11px] font-bold uppercase tracking-wide px-3 py-1 rounded-full mb-4">Ограниченное предложение</span>
+        <h3 class="text-xl font-bold mb-3">Бесплатная проверка первого поставщика</h3>
+        <p class="text-sm text-white/85 mb-6">Для новых клиентов — проверим благонадёжность вашего первого поставщика бесплатно.</p>
+        <a href="#request-form" data-cta="request" data-mode="modal" class="mt-auto self-start inline-block bg-white text-primary font-bold text-sm px-5 py-2.5 rounded-full hover:bg-white/90 transition-colors">Оставить заявку</a>
+      </div>
+      <div class="reveal flex flex-col relative overflow-hidden rounded-2xl p-7 text-white bg-gradient-to-br from-primary to-dark">
+        <span class="badge-limited self-start inline-block text-[11px] font-bold uppercase tracking-wide px-3 py-1 rounded-full mb-4">Ограниченное предложение</span>
+        <h3 class="text-xl font-bold mb-3">Скидка 10% на упаковку</h3>
+        <p class="text-sm text-white/85 mb-6">При первой отправке груза через нас — скидка 10% на упаковку товара.</p>
+        <a href="#request-form" data-cta="request" data-mode="modal" class="mt-auto self-start inline-block bg-white text-primary font-bold text-sm px-5 py-2.5 rounded-full hover:bg-white/90 transition-colors">Оставить заявку</a>
+      </div>
+      <div class="reveal flex flex-col relative overflow-hidden rounded-2xl p-7 text-white bg-gradient-to-br from-primary to-dark">
+        <span class="badge-limited self-start inline-block text-[11px] font-bold uppercase tracking-wide px-3 py-1 rounded-full mb-4">Ограниченное предложение</span>
+        <h3 class="text-xl font-bold mb-3">Бесплатная консультация</h3>
+        <p class="text-sm text-white/85 mb-6">Расскажем, как выгоднее организовать доставку, и бесплатно рассчитаем стоимость.</p>
+        <a href="#request-form" data-cta="request" data-mode="modal" class="mt-auto self-start inline-block bg-white text-primary font-bold text-sm px-5 py-2.5 rounded-full hover:bg-white/90 transition-colors">Оставить заявку</a>
+      </div>
+    </div>
+    <p class="text-xs text-black/40 mt-6 text-center">*Плейсхолдер — условия акций уточняются и утверждаются заказчиком</p>
+  </div>
+</section>
+
+<!-- ============ 8. ОТЗЫВЫ КЛИЕНТОВ ============ -->
+<section id="reviews" class="py-16 sm:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12 reveal">
+      <div class="max-w-xl">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-dark mb-4">Отзывы клиентов</h2>
+        <p class="text-black/60 text-base sm:text-lg">Что говорят предприниматели, которые уже работают с нами*</p>
+      </div>
+      <div class="flex gap-3 self-end sm:self-auto">
+        <button id="reviews-prev" aria-label="Предыдущий отзыв" class="h-10 w-10 rounded-full border border-black/10 flex items-center justify-center hover:bg-bgsoft transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button id="reviews-next" aria-label="Следующий отзыв" class="h-10 w-10 rounded-full border border-black/10 flex items-center justify-center hover:bg-bgsoft transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="reviews-track" class="reveal reviews-track flex gap-6 overflow-x-auto pb-4 -mx-4 px-4 sm:mx-0 sm:px-0">
+      <!-- Отзыв 1 -->
+      <div data-review-card class="shrink-0 w-[280px] sm:w-[320px] bg-bgsoft rounded-2xl p-6 border border-black/5">
+        <div class="flex text-accent2 mb-3">★★★★★</div>
+        <p class="text-sm text-black/70 leading-relaxed mb-5">«Заказывали товар впервые — очень боялись мошенников. Cargo Siberia проверили поставщика, всё прошло гладко, груз пришёл в срок».</p>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-full bg-primary/15 flex items-center justify-center font-bold text-primary">АИ</div>
+          <div>
+            <p class="text-sm font-bold text-dark">Анна И.</p>
+            <p class="text-xs text-black/50">Селлер на маркетплейсе</p>
+          </div>
+        </div>
+      </div>
+      <!-- Отзыв 2 -->
+      <div data-review-card class="shrink-0 w-[280px] sm:w-[320px] bg-bgsoft rounded-2xl p-6 border border-black/5">
+        <div class="flex text-accent2 mb-3">★★★★★</div>
+        <p class="text-sm text-black/70 leading-relaxed mb-5">«Отправляли небольшую партию — всего 3 кг. Другие компании отказывали, а тут взяли и отправили быстро и без переплат».</p>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-full bg-primary/15 flex items-center justify-center font-bold text-primary">ДК</div>
+          <div>
+            <p class="text-sm font-bold text-dark">Дмитрий К.</p>
+            <p class="text-xs text-black/50">Частный заказчик</p>
+          </div>
+        </div>
+      </div>
+      <!-- Отзыв 3 -->
+      <div data-review-card class="shrink-0 w-[280px] sm:w-[320px] bg-bgsoft rounded-2xl p-6 border border-black/5">
+        <div class="flex text-accent2 mb-3">★★★★★</div>
+        <p class="text-sm text-black/70 leading-relaxed mb-5">«Личный менеджер вёл сделку от и до, всегда на связи. Для новичка в закупках из Китая — то, что нужно».</p>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-full bg-primary/15 flex items-center justify-center font-bold text-primary">ОП</div>
+          <div>
+            <p class="text-sm font-bold text-dark">Ольга П.</p>
+            <p class="text-xs text-black/50">Владелица розничного магазина</p>
+          </div>
+        </div>
+      </div>
+      <!-- Отзыв 4 -->
+      <div data-review-card class="shrink-0 w-[280px] sm:w-[320px] bg-bgsoft rounded-2xl p-6 border border-black/5">
+        <div class="flex text-accent2 mb-3">★★★★★</div>
+        <p class="text-sm text-black/70 leading-relaxed mb-5">«Оптовая партия пришла упакованной идеально, ничего не повредилось. Будем работать дальше».</p>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-full bg-primary/15 flex items-center justify-center font-bold text-primary">СВ</div>
+          <div>
+            <p class="text-sm font-bold text-dark">Сергей В.</p>
+            <p class="text-xs text-black/50">Оптовик</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-xs text-black/40 mt-4">*Плейсхолдер — реальные отзывы и ссылки на них предоставляются заказчиком</p>
+  </div>
+</section>
+
+<!-- ============ 9. ФОРМА «ОСТАВИТЬ ЗАЯВКУ» ============ -->
+<section id="request-form" class="py-16 sm:py-24 bg-primary text-white relative overflow-hidden">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-10 reveal">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4">Опишите ваш товар — рассчитаем стоимость и ответим в течение 15 минут</h2>
+      <p class="text-white/75 text-base sm:text-lg">Заполните форму, и наш менеджер свяжется с вами удобным способом</p>
+    </div>
+
+    <form data-request-form class="reveal bg-white text-ink rounded-3xl p-6 sm:p-10 shadow-xl grid gap-5">
+      <!-- Honeypot-поле для антиспам-защиты, скрыто от людей -->
+      <div class="hp-field" aria-hidden="true">
+        <label>Оставьте это поле пустым<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-sm font-semibold text-dark mb-1.5">Имя *</label>
+          <input required type="text" name="name" placeholder="Как к вам обращаться" class="w-full rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-dark mb-1.5">Телефон / мессенджер *</label>
+          <input required type="text" name="phone" placeholder="+7 999 000-00-00 или @telegram" class="w-full rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent">
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold text-dark mb-1.5">Описание товара *</label>
+        <textarea required name="product" rows="3" placeholder="Что нужно доставить/закупить: категория, объём, вес" class="w-full rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-sm font-semibold text-dark mb-1.5">Город доставки *</label>
+          <input required type="text" name="city" placeholder="Например, Новосибирск" class="w-full rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-dark mb-1.5">E-mail</label>
+          <input type="email" name="email" placeholder="you@example.com" class="w-full rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent">
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold text-dark mb-1.5">Комментарий</label>
+        <textarea name="comment" rows="2" placeholder="Дополнительная информация по заявке" class="w-full rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+      </div>
+
+      <div data-captcha>
+        <label class="block text-sm font-semibold text-dark mb-1.5" data-captcha-label>Сколько будет 2 + 2?</label>
+        <input required type="text" inputmode="numeric" placeholder="Ваш ответ" class="w-full sm:w-40 rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent">
+      </div>
+
+      <label class="flex items-start gap-3 text-xs sm:text-sm text-black/60">
+        <input required type="checkbox" name="consent" class="mt-1 h-4 w-4 rounded border-black/30 text-primary focus:ring-accent">
+        <span>Я согласен(на) на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank" class="text-primary font-semibold underline hover:text-accent">политикой конфиденциальности</a> *</span>
+      </label>
+
+      <div data-error class="hidden bg-red-50 text-red-600 text-sm rounded-xl px-4 py-3">
+        Пожалуйста, заполните все обязательные поля корректно.
+      </div>
+      <div data-success class="hidden bg-accent/10 text-primary text-sm rounded-xl px-4 py-3 font-semibold">
+        Спасибо! Мы свяжемся с вами в ближайшее время.
+      </div>
+
+      <button type="submit" class="bg-primary hover:bg-dark text-white font-bold px-6 py-4 rounded-full text-base transition-colors">Оставить заявку</button>
+      <p class="text-[11px] text-black/40 -mt-2">Нажимая на кнопку, вы соглашаетесь с условиями обработки заявки. Форма защищена от спама.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 10. КОНТАКТЫ И ПОДВАЛ (FOOTER) ============ -->
+<footer id="contacts" class="bg-dark text-white/80 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div>
+        <img src="assets/logo.svg" alt="Cargo Siberia" class="h-9 w-auto mb-4 brightness-0 invert opacity-90">
+        <p class="text-sm leading-relaxed text-white/60">Доставка и логистика грузов из Китая под ключ. От поиска поставщика до груза у вас на складе. От 1 кг.</p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-bold mb-4">Контакты</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="tel:+79990000000" class="hover:text-accent2 transition-colors">+7 (999) 000-00-00</a></li>
+          <li><a href="mailto:info@cargosiberia.ru" class="hover:text-accent2 transition-colors">info@cargosiberia.ru</a></li>
+          <li><a href="https://wa.me/79990000000" target="_blank" rel="noopener" class="hover:text-accent2 transition-colors">WhatsApp</a></li>
+          <li><a href="https://t.me/cargosiberia" target="_blank" rel="noopener" class="hover:text-accent2 transition-colors">Telegram</a></li>
+          <li><a href="weixin://" class="hover:text-accent2 transition-colors">WeChat</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-bold mb-4">Адрес и часы</h3>
+        <ul class="space-y-3 text-sm text-white/70">
+          <li>Склад: г. Гуанчжоу, Китай (плейсхолдер)</li>
+          <li>Офис: г. Новосибирск (плейсхолдер)</li>
+          <li>Пн–Сб: 09:00–19:00 (МСК)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-bold mb-4">Соцсети</h3>
+        <div class="flex gap-3">
+          <a href="#" aria-label="ВКонтакте" class="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent2 hover:text-dark transition-colors">VK</a>
+          <a href="#" aria-label="Instagram" class="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent2 hover:text-dark transition-colors">IG</a>
+          <a href="https://t.me/cargosiberia" aria-label="Telegram" class="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent2 hover:text-dark transition-colors">TG</a>
+        </div>
+        <a href="privacy.html" class="inline-block mt-6 text-sm text-white/60 hover:text-accent2 underline">Политика конфиденциальности</a>
+      </div>
+    </div>
+
+    <!-- Карта расположения склада/офиса (плейсхолдер-адрес — заменить на реальный) -->
+    <div class="rounded-2xl overflow-hidden border border-white/10 mb-10 h-64">
+      <iframe title="Карта расположения" src="https://www.google.com/maps?q=Guangzhou,China&amp;output=embed" width="100%" height="100%" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
+      <p>© <span id="current-year">2026</span> Cargo Siberia. Все права защищены.</p>
+      <p>Сайт носит информационный характер и не является публичной офертой.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ МОДАЛЬНОЕ ОКНО ФОРМЫ ЗАЯВКИ ============ -->
+<div id="request-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-overlay">
+  <div id="request-modal-panel" class="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative transform scale-95 opacity-0 transition-all duration-200">
+    <button data-close-modal aria-label="Закрыть" class="absolute top-4 right-4 h-9 w-9 rounded-full flex items-center justify-center hover:bg-black/5 text-black/50">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="m6 6 12 12M6 18 18 6"/></svg>
+    </button>
+    <h3 class="text-xl sm:text-2xl font-extrabold text-dark mb-1 pr-8">Оставить заявку</h3>
+    <p class="text-sm text-black/60 mb-6">Ответим в течение 15 минут в рабочее время</p>
+
+    <form data-request-form class="grid gap-4">
+      <div class="hp-field" aria-hidden="true">
+        <label>Оставьте это поле пустым<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold text-dark mb-1.5">Имя *</label>
+        <input required type="text" name="name" placeholder="Как к вам обращаться" class="w-full rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent">
+      </div>
+      <div>
+        <label class="block text-sm font-semibold text-dark mb-1.5">Телефон / мессенджер *</label>
+        <input required type="text" name="phone" placeholder="+7 999 000-00-00 или @telegram" class="w-full rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent">
+      </div>
+      <div>
+        <label class="block text-sm font-semibold text-dark mb-1.5">Описание товара *</label>
+        <textarea required name="product" rows="2" placeholder="Что нужно доставить/закупить" class="w-full rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold text-dark mb-1.5">Город доставки *</label>
+        <input required type="text" name="city" placeholder="Например, Новосибирск" class="w-full rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent">
+      </div>
+      <div>
+        <label class="block text-sm font-semibold text-dark mb-1.5">E-mail</label>
+        <input type="email" name="email" placeholder="you@example.com" class="w-full rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent">
+      </div>
+
+      <div data-captcha>
+        <label class="block text-sm font-semibold text-dark mb-1.5" data-captcha-label>Сколько будет 2 + 2?</label>
+        <input required type="text" inputmode="numeric" placeholder="Ваш ответ" class="w-full rounded-xl border border-black/15 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent">
+      </div>
+
+      <label class="flex items-start gap-3 text-xs text-black/60">
+        <input required type="checkbox" name="consent" class="mt-1 h-4 w-4 rounded border-black/30 text-primary focus:ring-accent">
+        <span>Согласен(на) на обработку персональных данных согласно <a href="privacy.html" target="_blank" class="text-primary font-semibold underline">политике конфиденциальности</a> *</span>
+      </label>
+
+      <div data-error class="hidden bg-red-50 text-red-600 text-sm rounded-xl px-4 py-3">
+        Пожалуйста, заполните все обязательные поля корректно.
+      </div>
+      <div data-success class="hidden bg-accent/10 text-primary text-sm rounded-xl px-4 py-3 font-semibold">
+        Спасибо! Мы свяжемся с вами в ближайшее время.
+      </div>
+
+      <button type="submit" class="bg-primary hover:bg-dark text-white font-bold px-6 py-3.5 rounded-full text-sm transition-colors">Отправить заявку</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ ПЛАВАЮЩАЯ КНОПКА МЕССЕНДЖЕРОВ ============ -->
+<div id="fab-wrap" class="fixed bottom-5 right-5 z-30 flex flex-col-reverse items-end gap-3">
+  <button id="fab-toggle" aria-label="Написать нам" class="h-14 w-14 rounded-full bg-accent hover:bg-primary text-white shadow-lg flex items-center justify-center transition-colors">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/></svg>
+  </button>
+  <a href="https://wa.me/79990000000" target="_blank" rel="noopener" aria-label="Написать в WhatsApp" class="fab-item h-12 w-12 rounded-full bg-[#25D366] text-white shadow-lg flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
+  </a>
+  <a href="https://t.me/cargosiberia" target="_blank" rel="noopener" aria-label="Написать в Telegram" class="fab-item h-12 w-12 rounded-full bg-[#229ED9] text-white shadow-lg flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6 3.6 11.9c-1.2.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.5c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.1-2 4.4 3.2c.8.5 1.4.2 1.6-.7l2.9-13.7c.3-1.2-.4-1.7-1.8-1.9Z"/></svg>
+  </a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
