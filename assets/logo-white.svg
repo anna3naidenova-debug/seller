@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" fill="none">
+  <!-- Вариант логотипа для тёмного фона (footer): те же грани кристалла, текст белым -->
+  <g>
+    <path d="M30,30 L30,3 L49.09,10.91 Z" fill="#9ccc4f"/>
+    <path d="M30,30 L10.91,10.91 L30,3 Z" fill="#8bc34a"/>
+    <path d="M30,30 L3,30 L10.91,10.91 Z" fill="#7cc242"/>
+    <path d="M30,30 L10.91,49.09 L3,30 Z" fill="#66bb4a"/>
+    <path d="M30,30 L30,57 L10.91,49.09 Z" fill="#4caf50"/>
+    <path d="M30,30 L49.09,49.09 L30,57 Z" fill="#2f8a3d"/>
+    <path d="M30,30 L57,30 L49.09,49.09 Z" fill="#1b4d2b"/>
+    <path d="M30,30 L49.09,10.91 L57,30 Z" fill="#215f34"/>
+    <path d="M30,3 L49.09,10.91 L57,30 L49.09,49.09 L30,57 L10.91,49.09 L3,30 L10.91,10.91 Z" fill="none" stroke="#0a1f12" stroke-width="0.6" stroke-opacity="0.35"/>
+  </g>
+  <text x="70" y="27" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="20" fill="#FFFFFF">Cargo</text>
+  <text x="70" y="48" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="20" fill="#7CC242">Siberia</text>
+</svg>

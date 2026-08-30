@@ -114,8 +114,3 @@ body{
     background:linear-gradient(180deg, var(--color-accent-2), var(--color-primary));
   }
 }
-
-/* Бейдж "Ограниченное предложение" */
-.badge-limited{
-  background:linear-gradient(90deg,#c0392b,#922b21);
-}
